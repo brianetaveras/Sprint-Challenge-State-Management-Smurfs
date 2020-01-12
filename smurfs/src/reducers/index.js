@@ -1,9 +1,6 @@
-import axios from 'axios'
-
-const initialState = axios.get('http://localhost:3333/smurfs').then(res=>{
-    console.log(res.data)
-    return res.data
-})
+const initialState = {
+    smurfs: [{"name":"Brainey","age":200,"height":"5cm","id":0}]
+}
 
 
 const smurfsReducer = (state = initialState, action) =>{
