@@ -8,6 +8,7 @@ class Smurf extends Component {
     killSmurf = (id) =>{
         axios.delete(`http://localhost:3333/smurfs/${id}`).then(res=>{
             this.props.killSmurf(res.data)
+            alert('You killed a smurf. Hope you can live with that')
         })
     }
 
