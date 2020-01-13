@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {getSmurfs} from '../actions/index';
+import {connect} from 'react-redux';
 
 class Smurf extends Component {
     constructor(props){
@@ -15,4 +17,8 @@ class Smurf extends Component {
     }
 }
 
-export default Smurf
+export default connect(state=>{
+    return {
+
+    }
+}, {getSmurfs: getSmurfs})(Smurf);
