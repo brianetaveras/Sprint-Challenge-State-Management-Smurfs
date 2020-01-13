@@ -27,3 +27,12 @@ body{
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   margin: 5px;
 }
+
+.kill-smurf{
+  background: red;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}

@@ -11,3 +11,10 @@ export const addSmurf = (data) => {
         payload: data
     }
 }
+
+export const killSmurf = (data) =>{
+    return {
+        type: "KILL_SMURF",
+        payload: data
+    }
+}

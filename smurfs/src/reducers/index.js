@@ -9,6 +9,8 @@ const smurfsReducer = (state = initialState, action) => {
       return { smurfs: action.payload };
     case "ADD_SMURF":
       return { smurfs: action.payload };
+    case "KILL_SMURF":
+      return { smurfs: action.payload };
     default:
       return state;
   }
